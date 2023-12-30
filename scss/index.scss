@@ -1,0 +1,94 @@
+@import "colors";
+@import "resets";
+@import "animations";
+
+body {
+    background-image: url(../assets/image.webp);
+    background-position: center top;
+    background-size: 105%;
+    background-color: $background-color;
+    height: 100vh;
+}
+
+header {
+    position: fixed;
+    top: 12vh;
+    width: 10%;
+    left: 45%;
+
+    .row {
+        position: relative;
+        height: 100%;
+        width: 100%;
+    }
+}
+
+footer {
+    position: fixed;
+    bottom: 30vh;
+    left: 45%;
+    width: 10%;
+
+    .row {
+        position: relative;
+        height: 100%;
+        width: 100%;
+    }
+}
+
+main {
+    padding: 20px!important;
+    .row {
+        flex-direction: column;
+    }
+}
+
+.card {
+    width: 100px;
+    height: 133px;
+}
+
+.btn {
+    background-color: $primary-color;
+    border: none;
+    color: #fff;
+    width: 100px;
+    font-size: 1.5rem;
+    padding: 5px!important;
+
+    &:hover {
+        background-color: $primary-color;
+        color: #fff;
+        border: 2px solid #fff;
+    }
+
+    &.disabled {
+        background-color: lighten($primary-color, 10%);
+        border: none;
+        color: lighten(#fff, 10%);
+    }
+}
+
+.points {
+    color: #fff;
+    font-size: 2rem;
+}
+
+@for $i from 1 through 10 {
+    header {
+        .row {
+            .card:nth-child(#{$i}) {
+                position: absolute;
+                left: ($i * 20px);
+            }
+        }
+    }
+    footer {
+        .row {
+            .card:nth-child(#{$i}) {
+                position: absolute;
+                left: ($i * 20px);
+            }
+        }
+    }
+}

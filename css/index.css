@@ -1,3 +1,175 @@
+* {
+  box-sizing: border-box;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
 body {
-  background-color: green;
+  background-image: url(../assets/image.webp);
+  background-position: center top;
+  background-size: 105%;
+  background-color: #363636;
+  height: 100vh;
+}
+
+header {
+  position: fixed;
+  top: 12vh;
+  width: 10%;
+  left: 45%;
+}
+header .row {
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+
+footer {
+  position: fixed;
+  bottom: 30vh;
+  left: 45%;
+  width: 10%;
+}
+footer .row {
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+
+main {
+  padding: 20px !important;
+}
+main .row {
+  flex-direction: column;
+}
+
+.card {
+  width: 100px;
+  height: 133px;
+}
+
+.btn {
+  background-color: #852916;
+  border: none;
+  color: #fff;
+  width: 100px;
+  font-size: 1.5rem;
+  padding: 5px !important;
+}
+.btn:hover {
+  background-color: #852916;
+  color: #fff;
+  border: 2px solid #fff;
+}
+.btn.disabled {
+  background-color: #b1361d;
+  border: none;
+  color: white;
+}
+
+.points {
+  color: #fff;
+  font-size: 2rem;
+}
+
+header .row .card:nth-child(1) {
+  position: absolute;
+  left: 20px;
+}
+
+footer .row .card:nth-child(1) {
+  position: absolute;
+  left: 20px;
+}
+
+header .row .card:nth-child(2) {
+  position: absolute;
+  left: 40px;
+}
+
+footer .row .card:nth-child(2) {
+  position: absolute;
+  left: 40px;
+}
+
+header .row .card:nth-child(3) {
+  position: absolute;
+  left: 60px;
+}
+
+footer .row .card:nth-child(3) {
+  position: absolute;
+  left: 60px;
+}
+
+header .row .card:nth-child(4) {
+  position: absolute;
+  left: 80px;
+}
+
+footer .row .card:nth-child(4) {
+  position: absolute;
+  left: 80px;
+}
+
+header .row .card:nth-child(5) {
+  position: absolute;
+  left: 100px;
+}
+
+footer .row .card:nth-child(5) {
+  position: absolute;
+  left: 100px;
+}
+
+header .row .card:nth-child(6) {
+  position: absolute;
+  left: 120px;
+}
+
+footer .row .card:nth-child(6) {
+  position: absolute;
+  left: 120px;
+}
+
+header .row .card:nth-child(7) {
+  position: absolute;
+  left: 140px;
+}
+
+footer .row .card:nth-child(7) {
+  position: absolute;
+  left: 140px;
+}
+
+header .row .card:nth-child(8) {
+  position: absolute;
+  left: 160px;
+}
+
+footer .row .card:nth-child(8) {
+  position: absolute;
+  left: 160px;
+}
+
+header .row .card:nth-child(9) {
+  position: absolute;
+  left: 180px;
+}
+
+footer .row .card:nth-child(9) {
+  position: absolute;
+  left: 180px;
+}
+
+header .row .card:nth-child(10) {
+  position: absolute;
+  left: 200px;
+}
+
+footer .row .card:nth-child(10) {
+  position: absolute;
+  left: 200px;
 }/*# sourceMappingURL=index.css.map */

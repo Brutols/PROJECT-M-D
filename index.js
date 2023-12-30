@@ -40,13 +40,17 @@ let drawCards = () => {
         }
         yourCardsDrawn++;
       }
+      tableCards.innerHTML += `<div class="card col-2">
+      <img src="${tableCardsArr[0].image}" alt="" />
+    </div>
+    <div class="card col-2 cardBack">
+      <img src="https://deckofcardsapi.com/static/img/back.png" alt="" />
+    </div>
+    <div class="card col-2 d-none">
+      <img src="${tableCardsArr[1].image}" alt="" />
+    </div>
+    `;
       for (const card of tableCardsArr) {
-        tableCards.innerHTML += `<div class="card col-2 d-none">
-        <img src="${card.image}" alt="" />
-      </div>
-      <div class="card col-2 cardBack">
-        <img src="https://deckofcardsapi.com/static/img/back.png" alt="" />
-      </div>`;
         if (
           card.value === "JACK" ||
           card.value === "QUEEN" ||
