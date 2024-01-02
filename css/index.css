@@ -9,7 +9,8 @@
 body {
   background-image: url(../assets/image.webp);
   background-position: center top;
-  background-size: 105%;
+  background-size: cover;
+  background-repeat: no-repeat;
   background-color: #363636;
   height: 100vh;
 }
@@ -17,8 +18,8 @@ body {
 header {
   position: fixed;
   top: 12vh;
-  width: 10%;
-  left: 45%;
+  width: 500px;
+  left: calc(50% - 250px);
 }
 header .row {
   position: relative;
@@ -29,8 +30,8 @@ header .row {
 footer {
   position: fixed;
   bottom: 30vh;
-  left: 45%;
-  width: 10%;
+  left: calc(50% - 250px);
+  width: 500px;
 }
 footer .row {
   position: relative;
@@ -47,6 +48,10 @@ main .row {
 
 .card {
   width: 100px;
+  min-width: 100px;
+}
+.card img {
+  width: 100%;
   height: 133px;
 }
 
@@ -76,100 +81,100 @@ main .row {
 
 header .row .card:nth-child(1) {
   position: absolute;
-  left: 20px;
+  left: 195px;
 }
 
 footer .row .card:nth-child(1) {
   position: absolute;
-  left: 20px;
+  left: 195px;
 }
 
 header .row .card:nth-child(2) {
   position: absolute;
-  left: 40px;
+  left: 215px;
 }
 
 footer .row .card:nth-child(2) {
   position: absolute;
-  left: 40px;
+  left: 215px;
 }
 
 header .row .card:nth-child(3) {
   position: absolute;
-  left: 60px;
+  left: 235px;
 }
 
 footer .row .card:nth-child(3) {
   position: absolute;
-  left: 60px;
+  left: 235px;
 }
 
 header .row .card:nth-child(4) {
   position: absolute;
-  left: 80px;
+  left: 255px;
 }
 
 footer .row .card:nth-child(4) {
   position: absolute;
-  left: 80px;
+  left: 255px;
 }
 
 header .row .card:nth-child(5) {
   position: absolute;
-  left: 100px;
+  left: 275px;
 }
 
 footer .row .card:nth-child(5) {
   position: absolute;
-  left: 100px;
+  left: 275px;
 }
 
 header .row .card:nth-child(6) {
   position: absolute;
-  left: 120px;
+  left: 295px;
 }
 
 footer .row .card:nth-child(6) {
   position: absolute;
-  left: 120px;
+  left: 295px;
 }
 
 header .row .card:nth-child(7) {
   position: absolute;
-  left: 140px;
+  left: 315px;
 }
 
 footer .row .card:nth-child(7) {
   position: absolute;
-  left: 140px;
+  left: 315px;
 }
 
 header .row .card:nth-child(8) {
   position: absolute;
-  left: 160px;
+  left: 335px;
 }
 
 footer .row .card:nth-child(8) {
   position: absolute;
-  left: 160px;
+  left: 335px;
 }
 
 header .row .card:nth-child(9) {
   position: absolute;
-  left: 180px;
+  left: 355px;
 }
 
 footer .row .card:nth-child(9) {
   position: absolute;
-  left: 180px;
+  left: 355px;
 }
 
 header .row .card:nth-child(10) {
   position: absolute;
-  left: 200px;
+  left: 375px;
 }
 
 footer .row .card:nth-child(10) {
   position: absolute;
-  left: 200px;
+  left: 375px;
 }/*# sourceMappingURL=index.css.map */

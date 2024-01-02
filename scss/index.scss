@@ -5,7 +5,8 @@
 body {
     background-image: url(../assets/image.webp);
     background-position: center top;
-    background-size: 105%;
+    background-size: cover;
+    background-repeat: no-repeat;
     background-color: $background-color;
     height: 100vh;
 }
@@ -13,8 +14,8 @@ body {
 header {
     position: fixed;
     top: 12vh;
-    width: 10%;
-    left: 45%;
+    width: 500px;
+    left: calc(50% - 250px);
 
     .row {
         position: relative;
@@ -26,8 +27,8 @@ header {
 footer {
     position: fixed;
     bottom: 30vh;
-    left: 45%;
-    width: 10%;
+    left: calc(50% - 250px);
+    width: 500px;
 
     .row {
         position: relative;
@@ -43,9 +44,14 @@ main {
     }
 }
 
-.card {
+.card{
     width: 100px;
-    height: 133px;
+    min-width: 100px;
+
+    img {
+        width: 100%;
+        height: 133px;
+    }
 }
 
 .btn {
@@ -79,7 +85,7 @@ main {
         .row {
             .card:nth-child(#{$i}) {
                 position: absolute;
-                left: ($i * 20px);
+                left: 175px + ($i * 20px);
             }
         }
     }
@@ -87,7 +93,7 @@ main {
         .row {
             .card:nth-child(#{$i}) {
                 position: absolute;
-                left: ($i * 20px);
+                left: 175px + ($i * 20px);
             }
         }
     }
