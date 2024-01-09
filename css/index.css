@@ -7,12 +7,15 @@
 }
 
 body {
-  background-image: url(../assets/image.webp);
+  background-image: url(../assets/blackjack-table.jpg);
   background-position: center top;
   background-size: cover;
   background-repeat: no-repeat;
   background-color: #363636;
   height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 header {
@@ -41,9 +44,6 @@ footer .row {
 
 main {
   padding: 20px !important;
-}
-main .row {
-  flex-direction: column;
 }
 
 .card {

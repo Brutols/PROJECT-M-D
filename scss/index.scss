@@ -3,12 +3,15 @@
 @import "animations";
 
 body {
-    background-image: url(../assets/image.webp);
+    background-image: url(../assets/blackjack-table.jpg);
     background-position: center top;
     background-size: cover;
     background-repeat: no-repeat;
     background-color: $background-color;
     height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 header {
@@ -39,9 +42,6 @@ footer {
 
 main {
     padding: 20px!important;
-    .row {
-        flex-direction: column;
-    }
 }
 
 .card{
